@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Main, {
 	All,
 	BannerSt,
@@ -10,10 +10,13 @@ import Main, {
 import SearchField from 'react-search-field';
 import '../stylesheets/App.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+// import axios from 'axios';
 
 let position = [40.741895, -73.989308];
+// const url = 'https://jsonplaceholder.typicode.com/todos/1'
 
 const Home = () => {
+
 	return (
 		<Main>
 			<BannerSt>
