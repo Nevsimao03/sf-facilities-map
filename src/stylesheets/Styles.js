@@ -4,7 +4,7 @@ const Main = style.div`
   background: #222831;
   color: #F9F6EE;
   width: 100vw;
-  hight: 61em;
+  hight: 100vh;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
