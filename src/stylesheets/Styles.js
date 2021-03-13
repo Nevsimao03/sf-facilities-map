@@ -8,7 +8,7 @@ const Main = style.div`
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 0.5fr 4.2fr 0.5fr;
+  grid-template-rows: 15vh 8vh 62vh 8vh;
   grid-template-areas:
     ". banner ."
     "search search search"
@@ -57,7 +57,7 @@ export const MapResultSt = style.div`
 export const Footer = style.div` 
   grid-area: foot;
   text-align: center;
-  padding: 1.5rem 0 1.5rem 0;
+  padding-top: 1.5rem;
 `;
 
 export const Link = style.a`
