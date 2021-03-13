@@ -4,12 +4,13 @@ const Main = style.div`
   background: #222831;
   color: #F9F6EE;
   width: 100vw;
-  hight: 100vh;
+  hight: 61em;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 15vh 10vh 65vh 10vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 8em 3em 32em 8em;
   grid-template-areas:
-    "banner banner banner"
+    ". banner ."
     "search search search"
     "main main main"
     "foot foot foot";
@@ -19,25 +20,33 @@ export default Main;
 export const BannerSt = style.div` 
   grid-area: banner;
   background: #121212;
+  border-radius: 25px;
+  width: 100%;
+  margin: 0.5rem 0 0 1rem;
+  text-align: center;
 `;
 
 export const SearchSt = style.div`
   grid-area: search;
-  background: #121212;
+  text-align: center;
+  margin: 1rem 0 0 0;
 `;
 
 export const All = style.div` 
   grid-area: main;
-  background: blue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "sideList mapResult mapResult"
+    "sideList mapResult mapResult"
+    ". mapResult mapResult"
 `;
 
 export const SideListSt = style.div` 
   grid-area: sideList;
-  background: green;
+  margin: 0 0 0 1rem;
+  text-align: center;
 `;
 
 export const MapResultSt = style.div` 
@@ -47,4 +56,11 @@ export const MapResultSt = style.div`
 
 export const Footer = style.div` 
   grid-area: foot;
+  text-align: center;
+  padding-top: 1.5rem;
+`;
+
+export const Link = style.a`
+  text-decoration: none;
+  color: #F9F6EE;
 `;
