@@ -12,7 +12,7 @@ import '../stylesheets/App.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import useSWR from 'swr';
 
-let position = [37.76501750599999, -122.40126092399998];
+let position = [37.76501750599999, -122.40126092359778];
 const fetcher = (...args) => fetch(...args).then((response) => response.json());
 
 const Home = () => {
