@@ -8,7 +8,7 @@ const Main = style.div`
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 15vh 8vh 62vh 8vh;
+  grid-template-rows: 15vh 8vh 70vh 8vh;
   grid-template-areas:
     ". banner ."
     "search search search"
