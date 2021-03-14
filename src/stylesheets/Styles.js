@@ -5,10 +5,9 @@ const Main = style.div`
   color: #F9F6EE;
   width: 100vw;
   hight: 100vh;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 15vh 8vh 70vh 8vh;
+  grid-template-rows: 15vh 8vh 70vh 7vh;
   grid-template-areas:
     ". banner ."
     "search search search"
@@ -36,11 +35,8 @@ export const All = style.div`
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "sideList mapResult mapResult"
-    "sideList mapResult mapResult"
-    ". mapResult mapResult"
 `;
 
 export const SideListSt = style.div` 

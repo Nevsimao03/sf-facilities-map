@@ -51,7 +51,6 @@ const Home = () => {
 		<Main>
 			<BannerSt>
 				<h1>SF City Facilities</h1>
-				<h4>Search By Name</h4>
 			</BannerSt>
 			<SearchSt onSubmit={handleSubmit}>
 				Search:{' '}
@@ -64,7 +63,7 @@ const Home = () => {
 				/>
 			</SearchSt>
 			<All>
-				<SideListSt>
+				<SideListSt className='sideList'>
 					{Info.map((n, i) => {
 						return (
 							<div key={i} style={{ overflow: 'hidden' }}>

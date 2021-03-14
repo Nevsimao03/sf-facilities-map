@@ -5,6 +5,16 @@
     margin: 1.5rem 0 0 1.6rem;
 }
 
-body {
-    overflow: hidden;
+.sideList {
+    overflow-y: scroll;
+}
+
+.sideList -webkit-scrollbar-track {
+    border-radius: 15%;
+}
+
+.sideList -webkit-scrollbar {
+}
+
+.sideList -webkit-scrollbar-thumb {
 }
